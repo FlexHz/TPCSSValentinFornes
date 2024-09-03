@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background-color: darkgrey;
+    margin: 4px;
+    width: 100vw;
+}
+.titulo{
+    color: white;
+    background-color: rgb(36, 33, 33);
+    text-align: center;
+    padding: 25px 0px;
+    font-size: 20px;
+
+}  
+h1{
+    border-bottom: 2px solid black;
+    padding-bottom: 10px;
+    font-size: medium;
+} 
+.contenedorej{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    background-color: white;
+    border-radius: 5px;
+    width: 100vw;
+    margin-top: 1rem;
+    padding: 16px 16px;
+    box-shadow: 12px 12px 12px -12px rgba(0,0,0,0.39);
+}
+.bq{
+    background-color: rgb(236, 234, 234);
+    font-style: italic;
+    padding: 10px;
+    color: rgb(119, 118, 118);
+    border-left: 5px solid darkgrey;
+    
+}
+.parrafo{
+    text-decoration: underline;
+}
+.pcaja1{
+    padding: 15px;
+}
+.caja1{
+    background-color: rgb(236, 234, 234);
+    border: 2px solid black;
+    border-radius: 5px;
+    margin: 0px 10px 0px 10px;
+    box-shadow: 10px 10px 5px -5px rgba(0,0,0,0.37);
+}
+.caja2{
+    background-color: rgb(236, 170, 126);
+    border: 4px solid black;
+    border-radius: 5px;
+    margin: 0px 10px 0px 10px;
+    box-shadow: 10px 10px 5px -5px rgba(0,0,0,0.37);
+}
+.cajaabs{ 
+    background-color: rgb(13, 125, 133);
+    border-radius: 5px;
+    text-align: center;
+    padding: 15px;
+    position: absolute;
+    top: 20px;
+    left: 60%;
+    height: 50px;
+    border: solid white;
+}
+.pcajaabs{
+    color: white;
+}
+.cajarel{
+    background-color: rgba(25, 204, 204, 0.301);
+    border-radius: 5px;
+    padding: 15px 15px 25px 15px;
+    position: relative
+}
+@media screen and (max-width: 768px){
+    body {
+        background-color: black
+     }
+    h1{
+        font-size: smaller;
+    }
+    .contenedorej{
+        padding: 2px;
+    }
+}
+.contenedorgrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    text-align: start;
+}
+.contenedorgrid div{
+    background-color: cornflowerblue;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+    margin: 5px;
+}
+.cuadrado{
+    background-color: lightblue;
+    height: 100px;
+    width: 100px;
+    transition: 1s;
+}
+.cuadrado:hover{
+    background-color:darkblue;
+    height: 100px;
+    width: 100px;
+}
+.circulo{
+    height: 100px;
+    width: 100px;
+    background-color: blueviolet;
+    border-radius: 50px;
+    animation: movcir 2s infinite;
+}
+@keyframes movcir {
+    0%{
+        transform: translateX(0px);
+    }
+    50%{
+        transform: translateX(100px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
